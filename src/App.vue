@@ -1,13 +1,11 @@
 <template>
   <div>
-    <AppHeader />
-    <AppFooter />
+    <HomePage/>
   </div>
 </template>
 
 <script setup>
-import AppHeader from '@/components/global/AppHeader.vue';
-import AppFooter from '@/components/global/AppFooter.vue';
+import HomePage from '/src/components/HomePage.vue'
 </script>
 
 <style>

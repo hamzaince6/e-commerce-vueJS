@@ -104,6 +104,22 @@ button svg {
     transition-delay: 0.2s;
 }
 
+.slider-btn{
+    display: inline-flex;
+    background: #B88E2F;
+    padding: 18px 48px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    -webkit-align-content: center;
+}
 
 /*--------------------------------------------------------------*/
 /* Header CSS */
@@ -305,6 +321,63 @@ button svg {
     color: #000000;
 }
 
+/*--------------------------------------------------------------*/
+/* Home Page Slider CSS */
+/*--------------------------------------------------------------*/
 
+.main-slider{
+    padding-bottom: 100px;
+}
 
+/* Swiper slide için temel stil */
+.swiper-slide {
+    position: relative;
+}
+
+.main-swiper-slide-img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.main-cta-box {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: #FFF3E3;
+    border-radius: 20px;
+    padding: 20px;
+    width: 510px;
+    flex-shrink: 0;
+}
+
+.main-cta-box h1 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-align: left;
+    padding: 20px;
+}
+
+.main-cta-box h2 {
+    color: #B88E2F;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left;
+    padding: 20px;
+}
+
+.main-cta-box p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    padding: 20px;
+}
 
