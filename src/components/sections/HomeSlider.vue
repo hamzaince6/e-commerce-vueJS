@@ -5,33 +5,17 @@
           :slides-per-view="1"
           :space-between="10"
           :loop="true"
-          :autoplay="{
-          delay: 3000,
-          disableOnInteraction: false
-        }"
+          :autoplay="{ delay: 4000, disableOnInteraction: false }"
           :mousewheel="true"
-          @slideChange="onSlideChange"
+          :modules="[Autoplay, Navigation]"
       >
-        <SwiperSlideComponent>
-          <img src="@/assets/img/home-slider/1.jpg" alt="Slide 1" class="main-swiper-slide-img" />
+        <SwiperSlideComponent v-for="(slide, index) in slides" :key="index">
+          <img :src="slide.image" :alt="slide.alt" class="main-swiper-slide-img" />
           <div class="main-cta-box">
-            <h1>New Arrival</h1>
-            <h2>Discover Our <br> New Collection</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-            <a href="#" class="slider-btn">
-              Buy Now
-            </a>
-          </div>
-        </SwiperSlideComponent>
-        <SwiperSlideComponent>
-          <img src="@/assets/img/home-slider/1.jpg" alt="Slide 1" class="main-swiper-slide-img" />
-          <div class="main-cta-box">
-            <h1>New Arrival</h1>
-            <h2>Discover Our <br> New Collection</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-            <a href="#" class="slider-btn">
-              Buy Now
-            </a>
+            <h1>{{ slide.title }}</h1>
+            <h2 v-html="slide.subtitle"></h2>
+            <p>{{ slide.description }}</p>
+            <a href="#" class="slider-btn">Buy Now</a>
           </div>
         </SwiperSlideComponent>
       </SwiperComponent>
@@ -40,19 +24,39 @@
 </template>
 
 <script>
-import { Swiper as SwiperComponent, SwiperSlide as SwiperSlideComponent } from 'swiper/vue';
-import 'swiper/swiper-bundle.css';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 export default {
-  components: {
-    SwiperComponent,
-    SwiperSlideComponent
+  data() {
+    return {
+      slides: [
+        {
+          image: require('@/assets/img/home-slider/1.jpg'),
+          alt: 'Slide 1',
+          title: 'New Arrival',
+          subtitle: 'Discover Our <br> New Collection',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.'
+        },
+        {
+          image: require('@/assets/img/home-slider/2.jpg'),
+          alt: 'Slide 2',
+          title: 'Featured Item',
+          subtitle: 'Check Out Our <br> Latest Designs',
+          description: 'Aliquam euismod sapien vel turpis facilisis, eget laoreet elit lacinia.'
+        }
+      ]
+    };
+  },
+  setup() {
+    return {
+      Autoplay,
+      Navigation
+    };
   }
 };
 </script>
 
 <style scoped>
-
 .swiper-slide {
   display: flex;
   justify-content: center;

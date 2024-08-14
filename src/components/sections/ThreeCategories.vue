@@ -1,36 +1,41 @@
 <template>
-  <div class="container three-card pt-100 pb-100">
-    <div class="row">
-      <div class="card-three-title">
-        <h1>Browse The Range</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="col-md-4">
-        <div class="card-three">
-          <img src="@/assets/img/three/dinning.jpg" alt="Dining" class="img-fluid">
-          <h2>Dining</h2>
+  <section class="pt-100 pb-100">
+    <div class="container three-card">
+      <div class="row">
+        <div class="card-three-title">
+          <h1>Browse The Range</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card-three">
-          <img src="@/assets/img/three/living.jpg" alt="Living" class="img-fluid">
-          <h2>Living</h2>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card-three">
-          <img src="@/assets/img/three/bedroom.jpg" alt="Bedroom" class="img-fluid">
-          <h2>Bedroom</h2>
+        <div v-for="(card, index) in cards" :key="index" class="col-md-4">
+          <div class="card-three">
+            <img :src="card.image" :alt="card.title" class="img-fluid">
+            <h2>{{ card.title }}</h2>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      cards: [
+        {
+          image: require('@/assets/img/three/dinning.jpg'),
+          title: 'Dining'
+        },
+        {
+          image: require('@/assets/img/three/living.jpg'),
+          title: 'Living'
+        },
+        {
+          image: require('@/assets/img/three/bedroom.jpg'),
+          title: 'Bedroom'
+        }
+      ]
+    };
+  }
+};
 </script>
-
-<style scoped>
-
-</style>

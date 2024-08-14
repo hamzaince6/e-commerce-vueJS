@@ -231,6 +231,31 @@ button svg {
     -webkit-align-content: center;
 }
 
+.our-products-btn{
+    display: inline-flex;
+    background: #B88E2F;
+    padding: 18px 48px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    -webkit-align-content: center;
+    transition: background-position 0.4s ease, color 0.4s ease;
+}
+
+.our-products-btn:hover{
+    color: black;
+    background-color: #FAF3EA;
+    background-position: right;
+}
+
+
 /*--------------------------------------------------------------*/
 /* Header CSS */
 /*--------------------------------------------------------------*/
@@ -492,7 +517,7 @@ button svg {
 }
 
 /*--------------------------------------------------------------*/
-/* Home Page Slider CSS */
+/* Three Card CSS */
 /*--------------------------------------------------------------*/
 
 .three-card{
@@ -539,4 +564,82 @@ button svg {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/*--------------------------------------------------------------*/
+/* Our Products CSS */
+/*--------------------------------------------------------------*/
+
+.our-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.our-products-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.our-products-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.our-products-title h1{
+    color: var(--TitleColor);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.our-products-card h1{
+    color: var(--TitleColor);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: left;
+    margin: 16px 0 0 12px;
+}
+
+.our-products-card h2{
+    color:var(--DescriptionColor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: left;
+    margin: 0 0 0 12px;
+}
+
+.our-products-card h3{
+    color: var(--TitleColor);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: left;
+    margin: 0 0 0 12px;
+}
+
+.our-products-card span{
+    color: var(--DescriptionColor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+    float: left;
+    text-decoration-line: line-through;
+    margin: 0 0 0 12px;
 }
