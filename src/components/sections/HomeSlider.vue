@@ -56,10 +56,5 @@ export default {
 };
 </script>
 
-<style scoped>
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+
+
