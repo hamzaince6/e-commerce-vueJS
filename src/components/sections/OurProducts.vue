@@ -30,56 +30,56 @@ export default {
     return {
       products: [
         {
-          image: require('@/assets/img/our-products/1.jpg'),
+          image: ('./assets/img/our-products/1.jpg'),
           name: 'Syltherine',
           description: 'Stylish cafe chair',
           price: 'Rp 2.500.000',
           originalPrice: 'Rp 3.500.000'
         },
         {
-          image: require('@/assets/img/our-products/2.jpg'),
+          image: ('./assets/img/our-products/2.jpg'),
           name: 'Leviosa',
           description: 'Modern dining chair',
           price: 'Rp 1.500.000',
           originalPrice: 'Rp 2.500.000'
         },
         {
-          image: require('@/assets/img/our-products/3.jpg'),
+          image: ('./assets/img/our-products/3.jpg'),
           name: 'Luxe',
           description: 'Luxury office chair',
           price: 'Rp 4.500.000',
           originalPrice: 'Rp 6.500.000'
         },
         {
-          image: require('@/assets/img/our-products/4.jpg'),
+          image: ('./assets/img/our-products/4.jpg'),
           name: 'Ergon',
           description: 'Ergonomic work chair',
           price: 'Rp 3.000.000',
           originalPrice: 'Rp 4.000.000'
         },
         {
-          image: require('@/assets/img/our-products/5.jpg'),
+          image: ('./assets/img/our-products/5.jpg'),
           name: 'Aura',
           description: 'Elegant lounge chair',
           price: 'Rp 3.800.000',
           originalPrice: 'Rp 5.000.000'
         },
         {
-          image: require('@/assets/img/our-products/6.jpg'),
+          image: ('./assets/img/our-products/6.jpg'),
           name: 'Orb',
           description: 'Minimalist accent chair',
           price: 'Rp 2.200.000',
           originalPrice: 'Rp 3.200.000'
         },
         {
-          image: require('@/assets/img/our-products/7.jpg'),
+          image: ('./assets/img/our-products/7.jpg'),
           name: 'Silvan',
           description: 'Wooden dining chair',
           price: 'Rp 1.800.000',
           originalPrice: 'Rp 2.800.000'
         },
         {
-          image: require('@/assets/img/our-products/8.jpg'),
+          image: ('./assets/img/our-products/8.jpg'),
           name: 'Verve',
           description: 'Versatile armchair',
           price: 'Rp 2.700.000',

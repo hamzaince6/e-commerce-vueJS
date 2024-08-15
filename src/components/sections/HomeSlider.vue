@@ -31,14 +31,14 @@ export default {
     return {
       slides: [
         {
-          image: require('@/assets/img/home-slider/1.jpg'),
+          image: ('./assets/img/home-slider/1.jpg'),
           alt: 'Slide 1',
           title: 'New Arrival',
           subtitle: 'Discover Our <br> New Collection',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.'
         },
         {
-          image: require('@/assets/img/home-slider/2.jpg'),
+          image: ('./assets/img/home-slider/2.jpg'),
           alt: 'Slide 2',
           title: 'Featured Item',
           subtitle: 'Check Out Our <br> Latest Designs',

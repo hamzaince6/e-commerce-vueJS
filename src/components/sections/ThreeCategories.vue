@@ -23,15 +23,15 @@ export default {
     return {
       cards: [
         {
-          image: require('@/assets/img/three/dinning.jpg'),
+          image: ('./assets/img/three/dinning.jpg'),
           title: 'Dining'
         },
         {
-          image: require('@/assets/img/three/living.jpg'),
+          image: ('./assets/img/three/living.jpg'),
           title: 'Living'
         },
         {
-          image: require('@/assets/img/three/bedroom.jpg'),
+          image: ('./assets/img/three/bedroom.jpg'),
           title: 'Bedroom'
         }
       ]

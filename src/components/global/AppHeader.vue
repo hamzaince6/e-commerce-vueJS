@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3 header">
-          <img src="/assets/img/header-logo.png" class="img-fluid" alt="e-commerce-header-logo">
+          <img :src="headerLogo" class="img-fluid" alt="e-commerce-header-logo">
           <h1>E-Commerce</h1>
         </div>
         <div class="col-md-6 header-list">
@@ -33,10 +33,12 @@
   </header>
 </template>
 
-<script setup>
-
+<script>
+export default {
+  data() {
+    return {
+      headerLogo: './assets/img/header-logo.png'
+    };
+  }
+};
 </script>
-
-<style scoped>
-
-</style>

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="footer">
-            <img src="/assets/img/header-logo.png" class="img-fluid" alt="e-commerce-footer-logo">
+            <img :src="headerLogo" class="img-fluid" alt="e-commerce-footer-logo">
             <h6>E-Commerce</h6>
           </div>
           <div class="footer-text">
@@ -77,9 +77,11 @@
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      headerLogo: './assets/img/header-logo.png'
+    };
+  }
+};
 </script>
-
-<style scoped>
-
-</style>
