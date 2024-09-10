@@ -31,8 +31,10 @@ body {
 }
 
 :root {
-    --TitleColor: var(#333);
-    --DescriptionColor: var(#666);
+    --TitleColor: #333;
+    --GeneralHeaderColor: #000000;
+    --DescriptionColor: #666;
+    --ShopFilterColor: #F9F1E7;
 }
 
 
@@ -235,7 +237,7 @@ button svg {
     display: inline-flex;
     background: #B88E2F;
     padding: 18px 48px;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     border-radius: 20px;
     color: #FFF;
@@ -786,9 +788,123 @@ button svg {
     right: 10px;
 }
 
+/*--------------------------------------------------------------*/
+/* Shop List Header */
+/*--------------------------------------------------------------*/
 
+.general-header {
+    padding: 120px 0;
+    height: auto;
+    background-image: url('../img/shop-list/general-header.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+.general-header h1 {
+    color: var(--GeneralHeaderColor);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
 
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: var(--GeneralHeaderColor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.breadcrumb-item a {
+    color: var(--GeneralHeaderColor);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--GeneralHeaderColor);
+}
+
+.shop-filter {
+    background-color: var(--ShopFilterColor);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.shop-filter .filter-icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+.filter-icon span{
+    color: var(--GeneralHeaderColor);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.filter-icon svg {
+    font-size: 28px;
+}
+
+.shop-filter h2{
+    color: var(--GeneralHeaderColor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.filter-options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
+.square {
+    background-color: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.show-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.short-by-box {
+    width: 188px;
+    height: 48px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.option h4{
+    color: var(--GeneralHeaderColor);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 
