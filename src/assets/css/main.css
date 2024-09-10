@@ -35,6 +35,7 @@ body {
     --GeneralHeaderColor: #000000;
     --DescriptionColor: #666;
     --ShopFilterColor: #F9F1E7;
+    --ShopListBannerColor: #242424;
 }
 
 
@@ -906,6 +907,45 @@ button svg {
     line-height: normal;
 }
 
+.shop-list-banner{
+    padding: 100px 0;
+    background-color: var(--ShopFilterColor);
+}
+
+.banner-icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content h4 {
+    color: var(--ShopListBannerColor);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0;
+}
+
+.text-content p {
+    color: var(--DescriptionColor);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    width: 100%;
+    max-width: 267px;
+    margin: 0;
+}
 
 
 
