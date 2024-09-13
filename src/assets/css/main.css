@@ -44,6 +44,10 @@ body {
 /* Padding & Margin */
 /*--------------------------------------------------------------*/
 
+.section__space{
+    padding: 60px 0 60px 0;
+}
+
 /* Padding Top */
 .pt-10 { padding-top: 10px; }
 .pt-20 { padding-top: 20px; }
@@ -997,6 +1001,10 @@ button svg {
     background: #F9F1E7;;
 }
 
+.products-content{
+    padding: 0 30px 0 30px;
+}
+
 .products-price h1{
     color: var(--GeneralHeaderColor);
     font-size: 42px;
@@ -1157,7 +1165,40 @@ button svg {
     margin-right: 8px;
 }
 
+.Product__Description{
+    border-bottom: 1px solid #D9D9D9;;
+    border-top: 1px solid #D9D9D9;;
+}
 
+.product-description{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 32px 0;
+}
+
+.product-description h2{
+    color: var(--GeneralHeaderColor);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-content p{
+    color: var(--DescriptionColor);
+    text-align: justify;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 
