@@ -33,6 +33,7 @@ body {
 :root {
     --primary: #B88E2F;
     --TitleColor: #333;
+    --hovered-color: #B88E2F;
     --GeneralHeaderColor: #000000;
     --DescriptionColor: #666;
     --ShopFilterColor: #F9F1E7;
@@ -1200,10 +1201,148 @@ button svg {
     line-height: normal;
 }
 
+/*--------------------------------------------------------------*/
+/* Comparison Page */
+/*--------------------------------------------------------------*/
 
+.Comparison__Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
+.Comparison__Card h3{
+    color: var(--GeneralHeaderColor);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 126.5%;
+    width: 100%;
+    max-width: 192px;
+    margin: 12px 0 6px 12px;
+}
 
+.Comparison__Card span{
+    color: var(--GeneralHeaderColor);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 0 12px;
+}
 
+.Comparison__Card h2{
+    color: var(--GeneralHeaderColor);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 126.5%;
+    width: 100%;
+    max-width: 224px;
+}
+
+.comparison-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 12px;
+    width: 100%;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.comparison-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--hovered-color);
+    transition: width 0.3s ease;
+}
+
+.comparison-btn:hover {
+    color: var(--hovered-color);
+}
+
+.comparison-btn:hover::after {
+    width: 50%;
+}
+
+.Card__Group{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 6px 0 0 12px;
+}
+
+.Card__Group em{
+    color: var(--GeneralHeaderColor);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Card__Group span{
+    color: var(--DescriptionColor);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.products-star{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 12px 0 12px;
+}
+
+.comparison__star{
+    font-size: 12px;
+    color: #FFC700;
+}
+
+.Comparison__Card h4{
+    color: var(--GeneralHeaderColor);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126.5%;
+    text-align: center;
+}
+
+.product-select {
+    margin-top: 10px;
+    align-self: center;
+}
+
+.product-select select {
+    border-radius: 6px;
+    background: var(--primary);
+    color: white;
+    width: 242px;
+    height: 39px;
+    flex-shrink: 0;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product-select select option {
+    background: transparent;
+    color: white;
+}
 
 
 

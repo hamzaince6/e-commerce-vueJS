@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
+import store from './store';
 
 // Import global CSS
 import './assets/css/main.css';
@@ -38,6 +39,7 @@ app.component('SwiperSlideComponent', SwiperSlideComponent);
 // Use BootstrapVue
 app.use(BootstrapVue3);
 app.use(router);
+app.use(store);  // Store'u Vue uygulamasına ekleyin
 
 // Mount the app
 app.mount('#app');

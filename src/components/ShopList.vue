@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <ShopListHeader />
+  <ShopListHeader :title="pageTitle" /> />
   <ShopListFilterComponents/>
   <ShopListComponents/>
   <ShopListBanner/>
@@ -18,5 +18,10 @@ import ShopListBanner from "@/components/sections/ShopListBanner.vue";
 
 export default defineComponent({
   components: {ShopListBanner, ShopListComponents, ShopListFilterComponents, ShopListHeader, AppFooter, AppHeader,},
+  data() {
+    return {
+      pageTitle: 'Shop'
+    };
+  }
 });
 </script>
