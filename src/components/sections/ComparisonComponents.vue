@@ -57,8 +57,176 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row Comparison__Row">
+        <div class="col-md-3 line-table">
+          <h4>General</h4>
+          <ul class="list">
+            <li>Sales Package</li>
+            <li>Sales Package</li>
+            <li>Secondary Material</li>
+            <li>Configuration</li>
+            <li>Upholstery Material</li>
+            <li>Upholstery Color</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 sectional sofa</li>
+            <li>TFCBLIGRBL6SRHS</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 Three Seater, 2 Single Seater</li>
+            <li>DTUBLIGRBL568</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+
+        <div class="col-md-3 line-table">
+          <h4>General</h4>
+          <ul class="list">
+            <li>Sales Package</li>
+            <li>Sales Package</li>
+            <li>Secondary Material</li>
+            <li>Configuration</li>
+            <li>Upholstery Material</li>
+            <li>Upholstery Color</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 sectional sofa</li>
+            <li>TFCBLIGRBL6SRHS</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 Three Seater, 2 Single Seater</li>
+            <li>DTUBLIGRBL568</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+
+        <div class="col-md-3 line-table">
+          <h4>General</h4>
+          <ul class="list">
+            <li>Sales Package</li>
+            <li>Sales Package</li>
+            <li>Secondary Material</li>
+            <li>Configuration</li>
+            <li>Upholstery Material</li>
+            <li>Upholstery Color</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 sectional sofa</li>
+            <li>TFCBLIGRBL6SRHS</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 Three Seater, 2 Single Seater</li>
+            <li>DTUBLIGRBL568</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+
+        <div class="col-md-3 line-table">
+          <h4>General</h4>
+          <ul class="list">
+            <li>Sales Package</li>
+            <li>Sales Package</li>
+            <li>Secondary Material</li>
+            <li>Configuration</li>
+            <li>Upholstery Material</li>
+            <li>Upholstery Color</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 sectional sofa</li>
+            <li>TFCBLIGRBL6SRHS</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3 line-table">
+          <h4></h4>
+          <ul class="list">
+            <li>1 Three Seater, 2 Single Seater</li>
+            <li>DTUBLIGRBL568</li>
+            <li>Solid Wood</li>
+            <li>L-shaped</li>
+            <li>Fabric + Cotton</li>
+            <li>Bright Grey & Lion</li>
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
   </section>
 </template>
+
+<style scoped>
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.col-md-3 {
+  padding: 15px;
+}
+
+</style>
+
 
 <script>
 export default {
