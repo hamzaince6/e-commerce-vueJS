@@ -29,8 +29,8 @@
         <div class="col-md-6">
           <div class="products-content">
             <div class="products-price">
-              <h1>Asgaard sofa</h1>
-              <span>Rs. 250,000.00</span>
+              <h1>{{ productName }}</h1>
+              <span>Rs. {{ productPrice }}</span>
               <div class="products-star">
                 <font-awesome-icon :icon="['fas', 'star']" class="star-full" />
                 <font-awesome-icon :icon="['fas', 'star']" class="star-full" />
@@ -40,7 +40,7 @@
                 <span>5 Customer Review</span>
               </div>
               <div class="products-detail">
-                <p>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.</p>
+                <p>{{QuantityPerUnit}}</p>
               </div>
               <div class="products-size">
                 <h2>Size</h2>
@@ -74,20 +74,35 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
+      productName: '',
+      productPrice: '',
+      QuantityPerUnit: '',
+      productImages: ['1-mini', '2-mini', '3-mini', '4-mini'],
+      largeImage: '1-large',
       colors: ['#816DFA', '#FF5733', '#33FF57', '#3357FF'],
       quantity: 1
     };
   },
+  async created() {
+    await this.fetchProduct();
+  },
   methods: {
-    increaseQuantity() {
-      this.quantity += 1;
-    },
-    decreaseQuantity() {
-      if (this.quantity > 1) {
-        this.quantity -= 1;
+    async fetchProduct() {
+      try {
+        const response = await axios.get('http://localhost:3000/api/products');
+        const data = response.data;
+        if (data.length > 0) {
+          this.productName = data[1].ProductName;
+          this.productPrice = data[1].UnitPrice;
+          this.QuantityPerUnit = data[1].QuantityPerUnit;
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error);
       }
     }
   }
