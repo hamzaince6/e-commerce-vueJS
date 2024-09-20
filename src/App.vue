@@ -1,5 +1,5 @@
 <template>
-  <SingleProduct/>
+  <ShopCard/>
 </template>
 
 <script setup>
@@ -8,5 +8,5 @@
 // import SingleProduct from "@/components/SingleProduct.vue";
 // import ProductComparison from "@/components/ProductComparison.vue";
 //import ShopCard from "@/components/ShopCard.vue";
-import SingleProduct from "@/components/SingleProduct.vue";
+import ShopCard from "@/components/ShopCard.vue";
 </script>
