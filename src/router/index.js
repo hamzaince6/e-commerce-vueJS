@@ -6,6 +6,7 @@ import Contact from '../views/Contact.vue';
 import ProductComparison from '../views/ProductComparison.vue';
 import ShopCard from '../views/ShopCard.vue';
 import SingleProduct from '../views/SingleProduct.vue';
+import NotFound from '../views/NotFound.vue';
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/single-product',
     name: 'single-product',
     component: SingleProduct,
+  },
+  {
+    path: '/:catchAll(.*)', // Not Found için
+    name: 'not-found',
+    component: NotFound,
   },
 ];
 

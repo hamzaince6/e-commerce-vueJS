@@ -10,14 +10,13 @@ import './assets/css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css';
 
-// Font Awesome Core ve ikonları içe aktar
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 // İkonları kütüphaneye ekleyin
-library.add(fas, fab); // Solid ve brand ikonları eklendi
+library.add(fas, fab);
 
 // BootstrapVue'u içe aktar
 import BootstrapVue3 from 'bootstrap-vue-3';
@@ -39,7 +38,7 @@ app.component('SwiperSlideComponent', SwiperSlideComponent);
 // BootstrapVue'u kullan
 app.use(BootstrapVue3);
 app.use(router);
-app.use(store);  // Vuex Store'u uygulamaya ekle
+app.use(store);
 
-// Uygulamayı monte et
+// Uygulamayı mount et
 app.mount('#app');
