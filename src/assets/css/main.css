@@ -233,6 +233,7 @@ button svg {
     color: #FFF;
     text-decoration: none;
     font-size: 16px;
+    margin: 0 0 0 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -558,6 +559,13 @@ button svg {
 
 .three-card{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-three-title{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -1477,6 +1485,192 @@ button svg {
     justify-content: center;
     align-items: center;
 }
+
+/*--------------------------------------------------------------*/
+/* Checkout Form */
+/*--------------------------------------------------------------*/
+.form-group {
+    margin: 2rem 0 0 0;
+}
+
+.form-group-2 {
+    margin: 0 0 2rem 0;
+}
+
+.input {
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+    width: 100%;
+}
+
+.input:focus {
+    box-shadow: 5.5px 7px 0 black;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: white;
+}
+
+.product-total {
+    padding: 0 30px 0 30px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+
+.product-item h3{
+    color: var(--GeneralHeaderColor);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-item h2{
+    color: var(--primary);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.product-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #cccccc;
+}
+
+
+.place-holder-btn{
+    border-radius: 15px;
+    border: 1px solid #000;
+    padding: 12px 34px 12px 34px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: normal;
+    margin: 2rem 0 0 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.place-holder-btn:hover {
+    border: none;
+    background-color: var(--primary);
+    color: #000000;
+}
+
+/*--------------------------------------------------------------*/
+/* Contact Form */
+/*--------------------------------------------------------------*/
+
+.contact-tite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-tite h2{
+    color: var(--GeneralHeaderColor);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-tite p{
+    color: var(--DescriptionColor);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    max-width: 644px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.address-icon {
+    margin-right: 18px;
+    color: var(--primary);
+    font-size: 40px;
+}
+
+.address-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-details h3 {
+    color: var(--GeneralHeaderColor);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+}
+
+.address-details p {
+    color: var(--GeneralHeaderColor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    max-width: 212px;
+    margin: 0;
+}
+
+.submit-button{
+    margin: 2rem 0 0 0;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

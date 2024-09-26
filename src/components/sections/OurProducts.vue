@@ -18,9 +18,9 @@
       </div>
       </div>
       <div class="shop-btn text-center">
-        <a href="#" class="our-products-btn mt-20 mb-20">
+        <router-link to="/shop" class="our-products-btn mt-20 mb-20">
           Show More
-        </a>
+        </router-link>
       </div>
     </div>
   </section>

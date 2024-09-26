@@ -1,9 +1,9 @@
 <template>
-    <AppHeader />
-    <ShopListHeader :title="pageTitle" />
-    <ComparisonComponents/>
-    <ShopListBanner/>
-    <AppFooter />
+  <AppHeader />
+  <ShopListHeader :title="pageTitle" />
+  <ComparisonComponents/>
+  <ShopListBanner/>
+  <AppFooter />
 </template>
 
 <script>
@@ -23,3 +23,4 @@ export default defineComponent({
   }
 });
 </script>
+

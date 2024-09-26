@@ -18,3 +18,4 @@ export default defineComponent({
   components: {RelatedProducts, ProductDescription, ProductDetail, AppFooter, AppHeader,},
 });
 </script>
+

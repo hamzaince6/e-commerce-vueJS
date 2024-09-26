@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <ShopListHeader :title="pageTitle" /> />
+  <ShopListHeader :title="pageTitle" />
   <ShopListFilterComponents/>
   <ShopListComponents/>
   <ShopListBanner/>

@@ -3,43 +3,43 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-// Import global CSS
+// Global CSS
 import './assets/css/main.css';
 
-// Import Bootstrap and BootstrapVue CSS files
+// Bootstrap ve BootstrapVue stillerini içe aktar
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css';
 
-// Font Awesome Core ve İkonları İçe Aktarın
+// Font Awesome Core ve ikonları içe aktar
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 // İkonları kütüphaneye ekleyin
-library.add(fas, fab); // Add both solid and brand icons
+library.add(fas, fab); // Solid ve brand ikonları eklendi
 
-// Import BootstrapVue
+// BootstrapVue'u içe aktar
 import BootstrapVue3 from 'bootstrap-vue-3';
 
-// Import Swiper and its styles
+// Swiper ve stillerini içe aktar
 import { Swiper as SwiperComponent, SwiperSlide as SwiperSlideComponent } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
 
-// Create Vue app
+// Vue uygulamasını oluştur
 const app = createApp(App);
 
-// Register FontAwesome component globally
+// FontAwesome bileşenini global olarak kaydet
 app.component('font-awesome-icon', FontAwesomeIcon);
 
-// Register Swiper components globally with multi-word names
+// Swiper bileşenlerini global olarak kaydet
 app.component('SwiperComponent', SwiperComponent);
 app.component('SwiperSlideComponent', SwiperSlideComponent);
 
-// Use BootstrapVue
+// BootstrapVue'u kullan
 app.use(BootstrapVue3);
 app.use(router);
-app.use(store);  // Store'u Vue uygulamasına ekleyin
+app.use(store);  // Vuex Store'u uygulamaya ekle
 
-// Mount the app
+// Uygulamayı monte et
 app.mount('#app');

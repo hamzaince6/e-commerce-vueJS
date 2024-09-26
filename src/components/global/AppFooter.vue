@@ -13,10 +13,10 @@
         </div>
         <div class="col-md-2 footer-nav">
           <ul class="nav-list-footer">
-            <li class="nav-item-footer"><a href="#">Home</a></li>
-            <li class="nav-item-footer"><a href="#">Shop</a></li>
-            <li class="nav-item-footer"><a href="#">About</a></li>
-            <li class="nav-item-footer"><a href="#">Contact</a></li>
+            <li class="nav-item-footer"><router-link to="/">Home</router-link></li>
+            <li class="nav-item-footer"><router-link to="/shop">Shop</router-link></li>
+            <li class="nav-item-footer"><router-link to="/product-comparison">Product Comparison</router-link></li>
+            <li class="nav-item-footer"><router-link to="/contact">Contact</router-link></li>
           </ul>
         </div>
         <div class="col-md-3 footer-nav">
