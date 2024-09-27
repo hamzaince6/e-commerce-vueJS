@@ -5,7 +5,7 @@
           :slides-per-view="1"
           :space-between="10"
           :loop="true"
-          :autoplay="{ delay: 4000, disableOnInteraction: false }"
+          :autoplay="{ delay: 24000, disableOnInteraction: false }"
           :mousewheel="true"
           :modules="[Autoplay, Navigation]"
       >

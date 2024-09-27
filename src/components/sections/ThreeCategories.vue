@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-100 pb-100">
+  <section class="section__space">
     <div class="container three-card">
       <div class="row">
         <div class="card-three-title">
