@@ -26,7 +26,7 @@
           <router-link to="/favorites">
             <font-awesome-icon icon="heart" class="header-icon" />
           </router-link>
-          <router-link to="/checkout">
+          <router-link to="/shop-card">
             <font-awesome-icon icon="cart-shopping" class="header-icon" />
           </router-link>
         </div>

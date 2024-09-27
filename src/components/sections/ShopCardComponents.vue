@@ -64,7 +64,7 @@ export default {
             </div>
           </div>
           <div class="shop-btn">
-            <a href="#" class="checkout-btn" aria-label="sepet-buton">Check Out</a>
+            <router-link to="/checkout" class="checkout-btn" aria-label="sepet-buton">Check Out</router-link>
           </div>
         </div>
       </div>
