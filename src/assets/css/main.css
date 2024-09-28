@@ -1661,6 +1661,11 @@ button svg {
     display: block;
 }
 
+.swiper-button-prev::after {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
 /*--------------------------------------------------------------*/
 /* Responsive */
 /*--------------------------------------------------------------*/
@@ -1754,6 +1759,74 @@ button svg {
         text-align: left;
         padding: 6px 20px 6px 20px;
     }
+    .category-img-box h3 {
+        color: var(--TitleColor);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+    .category-img-box h2 {
+        color: var(--DescriptionColor);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    .overlay-box {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        width: calc(100% - 40px);
+        height: 100px;
+        background: rgba(255, 255, 255, 0.72);
+        -webkit-backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(1.5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    .text-content h4 {
+        color: var(--ShopListBannerColor);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        margin: 0;
+    }
+    .shop-list-banner {
+        padding: 50px 0;
+        background-color: var(--ShopFilterColor);
+    }
+    .banner-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: -webkit-center;
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        margin: 12px 0 0 0;
+    }
+    .product-select select {
+        border-radius: 6px;
+        background: var(--primary);
+        color: white;
+        width: 140px;
+        height: 39px;
+        flex-shrink: 0;
+        border: none;
+        padding: 0 10px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -1776,36 +1849,31 @@ button svg {
         text-align: left;
         padding: 6px 20px 6px 20px;
     }
+    .our-products-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        flex: 1 1 calc(33% - 20px);
+    }
+    .filter-options {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 570px){
     .main-cta-box{
         display: none;
     }
+    .our-products-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        flex: 1 1 calc(50% - 20px);
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 992px) {
     .mobile-menu {
