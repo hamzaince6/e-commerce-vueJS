@@ -1,12 +1,14 @@
 require('dotenv').config();
+console.log(process.env.DB_USER, process.env.DB_PASSWORD, process.env.DB_SERVER, process.env.DB_NAME, process.env.DB_PORT);
 const sql = require('mssql');
 
+
 const config = {
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    server: process.env.DB_SERVER,
-    database: process.env.DB_NAME,
-    port: parseInt(process.env.DB_PORT, 10),
+    user: process.env.DB_USER, // Kullanıcı adı
+    password: process.env.DB_PASSWORD, // Şifre
+    server: process.env.DB_SERVER, // Sunucu adı
+    database: process.env.DB_NAME, // Veritabanı adı
+    port: parseInt(process.env.DB_PORT, 10), // Port numarası
     options: {
         encrypt: false, // Eğer SSL/TLS şifrelemesi gerekiyorsa true olarak ayarlayın
         trustServerCertificate: true // Sertifika doğrulamasını geçmek için
@@ -15,6 +17,7 @@ const config = {
 
 async function getConnection() {
     try {
+        console.log('Connection config:', config); // Konfigürasyonu konsola yazdır
         const pool = await sql.connect(config);
         console.log('Veritabanı bağlantısı başarılı!');
         return pool;
@@ -24,4 +27,5 @@ async function getConnection() {
     }
 }
 
-module.exports = { getConnection };
+
+module.exports = { getConnection }; // Fonksiyonu dışa aktar
